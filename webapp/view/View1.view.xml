@@ -1,0 +1,47 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="emc.hr.payroll.controller.View1">
+
+    <Page title="{i18n>XTIT_VIEW1}">
+        <headerContent>
+            <Button text="Go To" icon="sap-icon://arrow-right" press="onNext"/>
+        </headerContent>
+
+        <content>
+            <SearchField id="idSF" search="onSearch" liveChange="onSearch"/>
+
+            <List id="idLst" mode="SingleSelectMaster" delete="onDelete" growingThreshold="20" growing="true" selectionChange="onFruitSelect" items="{path: '/ProductSet'}">
+
+                <headerToolbar>
+                    <Toolbar>
+                        <ToolbarSpacer/>
+                            <Button icon="sap-icon://delete" press="onDeleteItems"/>
+                    </Toolbar>
+                </headerToolbar>
+
+                <items>
+                     <ObjectListItem intro="{NAME}" title="{PRODUCT_ID}" number="{PRICE}" numberUnit="{CURRENCY_CODE}" icon="sap-icon://product"/>
+                </items>
+            
+            </List>
+        
+        </content>
+
+    <footer>
+
+        <Toolbar width="100%" id="toolbar2">
+
+            <content>
+
+                <ToolbarSpacer id="spacer1"/>
+
+                <Button press="onAdd" xmlns="sap.m" id="button2" icon="sap-icon://add-product" tooltip="Add New Product" activeIcon="sap-icon://add-product"/>
+
+            </content>
+
+        </Toolbar>
+
+    </footer>
+
+    </Page>
+
+
+</mvc:View>

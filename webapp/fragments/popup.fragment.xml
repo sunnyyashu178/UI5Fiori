@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+
+    <SelectDialog id="idPopUp" search="onSearchPopup" showClearButton="true" multiSelect="true" confirm="onConfirm" rememberSelections="true"/>
+</core:FragmentDefinition>

@@ -1,0 +1,382 @@
+{
+	"fruits": [
+        {
+			"name": "grapes",
+			"color": "purple",
+			"taste": "alkaline",
+			"size": "small",
+			"price": 55,
+			"curr": "INR",
+			"healthBenefit": "high in antioxidants, may prevent chronic diseases",
+			"season": "summer",
+			"image": "https://i.ndtvimg.com/i/2015-09/grapes_625x350_61443376353.jpg"
+		},
+		{
+			"name": "mango",
+			"color": "orange-yellow",
+			"taste": "alkaline",
+			"size": "medium",
+			"price": 120,
+			"curr": "INR",
+			"healthBenefit": "good source of fiber, cures acne and slows aging process",
+			"season": "spring",
+			"image": "https://c.ndtvimg.com/mangoes_625x300_1527514629119.jpg"
+		},
+		{
+			"name": "pineapple",
+			"color": "yellow",
+			"taste": "citrus",
+			"size": "medium",
+			"price": 100,
+			"curr": "INR",
+			"healthBenefit": "Good for glowing skin",
+			"season": "winter",
+			"image": "https://5.imimg.com/data5/YL/MP/KQ/SELLER-35964044/pineapple-500x500.jpg"
+		},
+		{
+			"name": "sapota",
+			"color": "brown",
+			"taste": "neutral",
+			"size": "small",
+			"price": 8000,
+			"curr": "INR",
+			"healthBenefit": "helps in digestion, controls blood pressure, great for skin and hair",
+			"season": "winter",
+			"image": "https://static.toiimg.com/photo/msid-67335311/67335311.jpg?210702"
+		},
+		{
+			"name": "banana",
+			"color": "yellow",
+			"taste": "alkaline",
+			"size": "medium",
+			"price": 3200,
+			"curr": "INR",
+			"healthBenefit": "powers the brain, reduces depression, scavenges harmful oxygen-free radicals",
+			"season": "year-round",
+			"image": "https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-1200-80.jpg"
+		},
+		{
+			"name": "pineapple",
+			"color": "yellow",
+			"taste": "citrus",
+			"size": "large",
+			"price": 48558,
+			"curr": "INR",
+			"healthBenefit": "helps improve eye and oral health, boosts immunity",
+			"season": "spring",
+			"image": "https://cdn.mos.cms.futurecdn.net/JEKZM22ZasnFC7JFGkAMvU-1200-80.jpg"
+		},
+		{
+			"name": "apple",
+			"color": "red",
+			"taste": "alkaline",
+			"size": "medium",
+			"price": 100,
+			"curr": "INR",
+			"healthBenefit": "detoxes the liver, may prevent Alzheimer's disease, decreases risk of diabetes",
+			"season": "year-round",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ868djAR5mIlAFnnjF---4paarCg48aQTr-g&usqp=CAU"
+		},
+		{
+			"name": "watermelon",
+			"color": "red",
+			"taste": "alkaline",
+			"size": "large",
+			"price": 30,
+			"curr": "INR",
+			"healthBenefit": "strengthens bones, cleans kidneys",
+			"season": "summer",
+			"image": "http://upload.evocdn.co.uk/fruitnet/uploads/asset_image/2_1212685_s.jpg"
+		},
+		{
+			"name": "guava",
+			"color": "green",
+			"taste": "neutral",
+			"size": "medium",
+			"price": 30,
+			"curr": "INR",
+			"healthBenefit": "aids weight loss, boosts heart health",
+			"season": "fall",
+			"image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2020%2F06%2F25%2Fguava-promo.jpg&q=85"
+		},
+		{
+			"name": "muskmelon",
+			"color": "yellow",
+			"taste": "neutral",
+			"size": "medium",
+			"price": 18,
+			"curr": "INR",
+			"healthBenefit": "fights against lung cancer, protects from UV rays, beneficial for skin",
+			"season": "summer",
+			"image": "https://im.rediff.com/getahead/2015/mar/13musk-melon.jpg"
+		},
+		{
+			"name": "orange",
+			"color": "orange",
+			"taste": "citrus",
+			"size": "medium",
+			"price": 24,
+			"curr": "INR",
+			"healthBenefit": "prevents skin damage, lowers cholesterol",
+			"season": "winter",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGc8NznLjJqSqWyslgGgG1EIGcG6HKkNSW2GnWqVfvrXAjS4LAhrir1Rk9tYbHnYeI0I8&usqp=CAU"
+		},
+		{
+			"name": "jackfruit",
+			"color": "yellow",
+			"taste": "neutral",
+			"size": "large",
+			"price": 136,
+			"curr": "INR",
+			"healthBenefit": "controls asthma, prevents anemia",
+			"season": "spring",
+			"image": "https://goqii.com/blog/wp-content/uploads/jackfruit_3054205-sq1.jpg"
+		},
+		{
+			"name": "papaya",
+			"color": "orange",
+			"taste": "alkaline",
+			"size": "large",
+			"price": 35,
+			"curr": "INR",
+			"healthBenefit": "aids in digestion, kills intestinal worms",
+			"season": "year-round",
+			"image": "https://cdn-prod.medicalnewstoday.com/content/images/articles/275/275517/a-papaya-cut-in-half.jpg"
+		},
+		{
+			"name": "pomegranate",
+			"color": "red",
+			"taste": "citrus",
+			"size": "medium",
+			"price": 100,
+			"curr": "INR",
+			"healthBenefit": "improves bone quality, inhibits cancer, heals cuts",
+			"season": "fall",
+			"image": "https://www.healthcastle.com/wp-content/uploads/2017/07/pomegranate.jpg"
+		},
+		{
+			"name": "aonla",
+			"color": "green",
+			"taste": "citrus",
+			"size": "small",
+			"price": 200,
+			"curr": "INR",
+			"healthBenefit": "enhances food absorption, promotes healthier hair, balances stomach acid",
+			"season": "winter",
+			"image": "https://i.ndtvimg.com/i/2015-05/amla-cover-625_625x350_51430491457.jpg"
+		},
+		{
+			"name": "kinnow",
+			"color": "orange",
+			"taste": "citrus",
+			"size": "small",
+			"price": 12,
+			"curr": "INR",
+			"healthBenefit": "reduces chances of cancer",
+			"season": "winter",
+			"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Harvest_Kinnow.jpg/220px-Harvest_Kinnow.jpg"
+		},
+		{
+			"name": "litchi",
+			"color": "red",
+			"taste": "neutral",
+			"size": "small",
+			"price": 61,
+			"curr": "INR",
+			"healthBenefit": "improves brain power, stops thyroid problems",
+			"season": "spring",
+			"image": "https://cdn2.stylecraze.com/wp-content/uploads/2013/04/21-Amazing-Benefits-Of-Litchis-Lychees-For-Skin-Hair-And-Health-1.jpg"
+		},
+		{
+			"name": "blue berry",
+			"color": "blue",
+			"taste": "berries",
+			"size": "small",
+			"price": 900,
+			"curr": "INR",
+			"healthBenefit": "improves brain power, stops thyroid problems",
+			"season": "spring",
+			"image": "https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/287/287710/blueberries.jpg"
+		},
+		{
+			"name": "black berry",
+			"color": "black",
+			"taste": "berries",
+			"size": "small",
+			"price": 280,
+			"curr": "INR",
+			"healthBenefit": "improves brain power, stops thyroid problems",
+			"season": "spring",
+			"image": "https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/blackberries.jpg"
+		}
+	],
+	"supplier": [
+        {
+			"name": "A S fruts trivantram",
+			"sinceWhen": "2018",
+			"contactNo": "+917025387860",
+			"person": "Ashique Sha",
+			"noOfStores": 5,
+			"specialty": ["grapes", "apple", "banana"],
+			"city": "Thiruvananthapuram"
+		},
+		{
+			"name": "Bharath Enterprises",
+			"sinceWhen": "2020",
+			"contactNo": "+919966856992",
+			"person": "Bharath Kumar",
+			"noOfStores": 11,
+			"specialty": ["mango"],
+			"city": "Kurnool"
+		},
+		{
+			"name": "NTON Trades Private Limited",
+			"sinceWhen": "2016",
+			"contactNo": "+918048371939",
+			"person": "K. Balaji",
+			"noOfStores": 3,
+			"specialty": ["sapota", "guava", "mango"],
+			"city": "Chennai"
+		},
+		{
+			"name": "Kevico International",
+			"sinceWhen": "2014",
+			"contactNo": "+917971384496",
+			"person": "Kevin Sureshbhai Kasodariya",
+			"noOfStores": 1,
+			"specialty": ["banana", "apple"],
+			"city": "Surat"
+		},
+		{
+			"name": "Utpal Hazarika",
+			"sinceWhen": "2012",
+			"contactNo": "+918047007014",
+			"person": "Utpal Hazarika",
+			"noOfStores": 8,
+			"specialty": ["pineapple", "apple"],
+			"city": "Guwahati"
+		},
+		{
+			"name": "Adil Trading Co.",
+			"sinceWhen": "2012",
+			"contactNo": "+918048371577",
+			"person": "Adil Ahmad Dar",
+			"noOfStores": 4,
+			"specialty": ["kinnow", "apple", "cherry"],
+			"city": "Srinagar"
+		},
+		{
+			"name": "Hazra Company",
+			"sinceWhen": "2015",
+			"contactNo": "+919051780342",
+			"person": "Debasis Hazra ",
+			"noOfStores": 21,
+			"specialty": ["watermelon", "mango", "grapes"],
+			"city": "Kolkata"
+		},
+		{
+			"name": "Azura International",
+			"sinceWhen": "2017",
+			"contactNo": "+918048372069",
+			"person": "Yash Bhondwe",
+			"noOfStores": 10,
+			"specialty": ["guava", "pomegranate", "apple", "banana"],
+			"city": "Indore"
+		},
+		{
+			"name": "Charan Dass & Sons",
+			"sinceWhen": "2012",
+			"contactNo": "+918068442244",
+			"person": "Rajinder Sachdeva",
+			"noOfStores": 40,
+			"specialty": ["muskmelon", "watermelon"],
+			"city": "Jalandhar"
+		},
+		{
+			"name": "Asra Enterprises",
+			"sinceWhen": "2020",
+			"contactNo": "+917971479945",
+			"person": "Asim Ansar",
+			"noOfStores": 13,
+			"specialty": ["mango", "apple", "orange"],
+			"city": "Hyderabad"
+		},
+		{
+			"name": "Jamna Fruit Agency",
+			"sinceWhen": "2012",
+			"contactNo": "+918057229350",
+			"person": "Priti Maheshwari",
+			"noOfStores": 16,
+			"specialty": ["litchi", "kiwi", "banana", "orange", "mango", "apple"],
+			"city": "Jalandhar"
+		}
+	],
+	"cities": [
+        {
+			"name": "Thiruvananthapuram",
+			"state": "Kerala",
+			"population": 784153,
+			"famousFor": "grapes"
+		},
+		{
+			"name": "Kurnool",
+			"state": "Andhra Pradesh",
+			"population": 460184,
+			"famousFor": "mango"
+		},
+		{
+			"name": "Nagpur",
+			"state": "Maharashtra",
+			"population": 2228018,
+			"famousFor": "orange"
+		},
+		{
+			"name": "Chennai",
+			"state": "Tamil Nadu",
+			"population": 4328063,
+			"famousFor": "sapota"
+		},
+		{
+			"name": "Surat",
+			"state": "Gujarat",
+			"population": 2894504,
+			"famousFor": "banana"
+		},
+		{
+			"name": "Guwahati",
+			"state": "Assam",
+			"population": 899094,
+			"famousFor": "pineapple"
+		},
+		{
+			"name": "Srinagar",
+			"state": "Jammu and Kashmir",
+			"population": 975857,
+			"famousFor": "apple"
+		},
+		{
+			"name": "Kolkata",
+			"state": "West Bengal",
+			"population": 4631392,
+			"famousFor": "watermelon"
+		},
+		{
+			"name": "Indore",
+			"state": "Madhya Pradesh",
+			"population": 1837041,
+			"famousFor": "guava"
+		},
+		{
+			"name": "Jalandhar",
+			"state": "Punjab",
+			"population": 785178,
+			"famousFor": "muskmelon"
+		},
+		{
+			"name": "Hyderabad",
+			"state": "Telangana",
+			"population": 3597816,
+			"famousFor": "orange"
+		}
+	]
+}

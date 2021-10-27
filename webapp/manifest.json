@@ -1,0 +1,137 @@
+{
+    "_version": "1.25.0",
+    "sap.app": {
+        "id":"emc.hr.payroll",
+        "title": "{{APP_DESCRIPTION}}",
+        "description": "{{APP_TITLE}}",
+        "applicationVersion": {
+            "version" : "1.0.0"
+        },
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "dataSources": {
+            "YaswanthService" : {
+                "uri": "/sap/opu/odata/sap/ZODATA_FIORI_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+    },
+
+    "sap.ui":{
+        "technology": "UI5",
+        "icons": {
+            "icon": "sap-icon://home"
+        },
+        "deviceTypes":{
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        }
+    },
+
+    "sap.ui5":{
+        "dependencies": {
+            "minUI5Version": "1.87.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.table": {}
+            }
+        },
+
+
+        "rootView":{
+            "id": "idAppView",
+            "type": "XML",
+            "viewName": "emc.hr.payroll.view.App"
+        },
+
+        "routing": {
+           "config":{
+                "viewPath": "emc.hr.payroll.view",
+                "viewType": "XML",
+                "controlId": "appCon",
+                "clearControlAggregation": true
+           },
+
+           "routes":[{
+                "name": "master",
+                "target": ["joe","Avengers"],
+                "pattern": ""
+                },
+
+                {
+                    "name": "detail",
+                    "target": ["joe","fruit"],
+                    "pattern": "product/{fruitId}"
+
+                },
+                {
+                    "name": "add",
+                    "pattern": "AddProduct",
+                    "target" : ["joe","putin"]
+                }
+
+            ],
+
+           "targets": {
+                "joe": {
+                    "viewName": "View1",
+                    "controlAggregation": "masterPages"
+                },
+
+                "Avengers": {
+                    "viewName": "Avengers",
+                    "controlAggregation": "detailPages"
+                },
+
+                "fruit" : {
+                    "viewName": "View2",
+                    "controlAggregation": "detailPages"
+                },
+                "putin": {
+                    "viewName" : "Add",
+                    "controlAggregation": "detailPages"
+                }
+           }
+        },
+
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+
+        "models": {
+
+            "i18n":{
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+
+            "local":{
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/mockdata/fruits.json"
+            },
+
+            "" : {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+
+                },
+                "dataSource": "YaswanthService",
+                "preload": true
+            } 
+        }
+
+    }
+
+
+
+
+
+
+
+
+}

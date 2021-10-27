@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+
+    <f:SimpleForm>
+        <Label text="Name" />
+        <Text text="{NAME}" />
+        <Label text="Supplier_Id" class="sapUiSmallMarginTop"/>
+        <Text text="{SUPPLIER_ID}" class="sapUiSmallMarginTop"/>
+        <Label text="Price" />
+        <Text text="{
+            parts: [{path: 'PRICE'}, {path: 'CURRENCY_CODE'}],
+            formatter: '.formatter.formatCurrency'
+        }" />
+        <Label text="Dimension_Unit" />
+        <Text text="{DIM_UNIT}" />
+
+
+    </f:SimpleForm>
+
+</core:FragmentDefinition>

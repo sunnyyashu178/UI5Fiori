@@ -1,0 +1,14 @@
+{
+  "name": "fioriapp2",
+  "version": "1.0.0",
+  "description": "my fiori project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yaswanth",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/approuter": "^9.1.0",
+    "@sap/html5-repo-mock": "2.0.1"
+  }
+}

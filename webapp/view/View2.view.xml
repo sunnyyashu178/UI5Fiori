@@ -1,0 +1,106 @@
+<mvc:View controllerName="emc.hr.payroll.controller.View2" 
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+
+    <Page title="Fruit Details" showNavButton="true" navButtonPress="onBack">
+        <content>
+
+            <ObjectHeader intro="{DESCRIPTION}" title="{PRODUCT_ID}"
+                icon="sap-icon://product" number="{PRICE}" numberUnit="{CURRENCY_CODE}">
+            </ObjectHeader>
+
+            <IconTabBar >
+                <items>
+                    <IconTabFilter icon="sap-icon://warning" text="More Info">
+                        <core:Fragment fragmentName="emc.hr.payroll.fragments.moreInfo" type="XML" />
+                        <core:Fragment fragmentName="emc.hr.payroll.fragments.supplierInfo" type="XML" />
+                    </IconTabFilter>
+
+                    <IconTabFilter iconColor="Positive" icon="sap-icon://supplier" text="Supplier">
+                        <Table items="{/supplier}" id="idTable">
+
+                            <headerToolbar>
+                                <Toolbar >
+                                    <ToolbarSpacer ></ToolbarSpacer>
+                                    <Button icon="sap-icon://filter" press="onFilter" id="idFilter"></Button>
+                                </Toolbar>
+                            </headerToolbar>
+
+                            <columns>
+                                <Column>
+                                    <header>
+                                        <Text text="Name"></Text>
+                                    </header>
+                                
+                                </Column>
+
+                                <Column>
+                                    <header>
+                                        <Text text="City"></Text>
+                                    </header>
+                                
+                                </Column>
+
+                                <Column>
+                                    <header>
+                                        <Text text="Since When"></Text>
+                                    </header>
+                                
+                                </Column>
+
+                                <Column>
+                                    <header>
+                                        <Text text="Contact Person"></Text>
+                                    </header>
+                                </Column>
+                            
+                            </columns>
+
+                            <items>
+                                <ColumnListItem >
+                                    <Text text="{name}"></Text>
+                                    <Input value="{city}" showValueHelp="true" valueHelpRequest="onF4Help"/>
+                                    <Text text="{sinceWhen}" />
+                                    <Link text="{person}" press="onLinkPress"></Link>                      
+                                
+                                </ColumnListItem>
+                            
+                            </items>
+
+                        </Table>
+                    </IconTabFilter>
+
+                    <IconTabFilter iconColor="Negative" icon="sap-icon://home" text="Cities">
+                            <Select items="{/cities}">
+                                <core:Item text="{cityName}" key="{cityName}"></core:Item>
+                            </Select>
+
+                            <ComboBox items="{/cities}">
+                                <core:Item text="{cityName}" key="{cityName}"></core:Item>
+                            </ComboBox>
+
+                            <MultiComboBox items="{/cities}">
+                                <core:Item text="{cityName}" key="{cityName}"></core:Item>
+                            </MultiComboBox>
+                    </IconTabFilter>
+                
+                </items>
+            
+            </IconTabBar>
+
+        </content>
+        <footer>
+            <Toolbar >
+                <ToolbarSpacer />
+                <Button text="Order" press="onOrder" type="Emphasized"></Button>
+                <Button text="Cancel" press="onCanel" type="Reject"></Button>
+            </Toolbar>
+        </footer>
+        <content>
+            
+        </content>
+    
+    </Page>
+
+
+</mvc:View>

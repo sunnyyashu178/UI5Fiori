@@ -1,0 +1,56 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+          xmlns:l="sap.ui.layout"
+          controllerName="emc.hr.payroll.controller.Add">
+    <Page title="Add New Product" showNavButton="true" navButtonPress="onBack">
+        <VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Product Data"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Product Id" />
+				<Input id="name" submit="onEnter" value="{viewModel>/productData/PRODUCT_ID}" />
+                <Button icon="sap-icon://monitor-payments" tooltip="Load Most Expensive Product" press="onMostExp" />
+				<Label text="Name" />
+				<Input value="{viewModel>/productData/NAME}">
+				</Input>
+				<Input value="{viewModel>/productData/DESCRIPTION}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label text="Supplier Id" />
+				<Input value="{viewModel>/productData/SUPPLIER_ID}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label text="Price/Currency" />
+				<Input type="Number" value="{viewModel>/productData/PRICE}" />
+                <Input value="{viewModel>/productData/CURRENCY_CODE}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+    <footer>
+        <Toolbar >
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Button icon="sap-icon://save" press="onSave" text="Save"></Button>
+            <Button id="clear" icon="sap-icon://clear-all" press="onClear" text="Clear"></Button>
+            <Button icon="sap-icon://delete" press="onDelete" text="Delete"></Button>
+        </Toolbar>
+    </footer>
+    </Page>
+</mvc:View>         
